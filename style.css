@@ -7,20 +7,12 @@
 :root {
   font-size: 62.5%;
   --ff-primary: "Roboto", sans-serif;
-
-  --primary-color: #e1e1e6;
-  --background-color: #000;
-  --background-input: #06181c;
-  --color-placeholder: #7c7c8a;
-  --btn-color: #065e7c;
-  --primary-row: #092d38;
-  --secundary-row: rgba(6, 22, 27, 0.5);
 }
 
 body {
   font-size: 1.6rem;
-  color: var(--primary-color);
-  background-color: var(--background-color);
+  color: #e1e1e6;
+  background-color: #000;
 }
 
 body * {
@@ -28,7 +20,7 @@ body * {
 }
 
 #app {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -36,12 +28,13 @@ body * {
 header {
   display: flex;
   align-items: center;
-  gap: 15rem;
+  gap: 18rem;
   margin: 8.7rem 0;
 }
 
 header .logo {
-  width: 18rem;
+  width: 11rem;
+  height: 2rem;
 }
 
 .search {
@@ -51,9 +44,9 @@ header .logo {
 }
 
 .search input {
-  width: 41rem;
+  width: 39rem;
   height: 4.8rem;
-  background-color: var(--background-input);
+  background-color: #06181c;
   border: none;
   border-radius: 0.5rem;
   padding: 1.6rem;
@@ -63,7 +56,7 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--btn-color);
+  background-color: #065e7c;
   color: #fff;
   gap: 0.8rem;
   text-transform: uppercase;
@@ -82,29 +75,39 @@ table {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
- }
-
-td {
-  border-bottom: 1px solid #4a808c;
 }
 
 table * {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 table th {
   background: #092d38;
   text-align: left;
   font-weight: normal;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.7rem;
 }
 
 table tr:nth-child(odd) {
-  background: var(--secundary-row);
+  background: rgba(6, 22, 27, 0.50);
 }
 
 table tr {
   background: #06181c;
+  font-weight: 700;
+}
+
+td {
+  border-bottom: 1px solid #4a808c;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 td.user img {
@@ -112,4 +115,22 @@ td.user img {
   height: 5rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #E1E1E6;
+}
+
+span {
+  text-decoration: none;
+  color: #E1E1E6;
+  font-weight: 400;
+}
+
+td button.remove {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
 }
