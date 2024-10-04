@@ -9,8 +9,19 @@ export class Favorites {
     GithubUser.seach("brunooliveira7").then((user) => console.log(user));
   }
 
+  load() {
+    this.entries = JSON.parse(localStorage.getItem("@github-favorites:")) || [];
+  }
 
-  
+  delete(user) {
+    const filteredEntries = this.entries.filter(
+      (entry) => entry.login !== user.login
+    );
+    this.entries = filteredEntries;
+    this.upDate();
+    this.save();
+  }
+
 }
 
 export class FavoritesView extends Favorites {
@@ -20,7 +31,18 @@ export class FavoritesView extends Favorites {
     this.tbody = this.root.querySelector("table tbody");
 
     this.upDate();
+
+    this.onadd();
   }
+
+  onadd() {
+    const addButton = this.root.querySelector(".search button");
+    addButton.onclick = () => {
+      const { value } = this.root.querySelector(".search input");
+      this.add(value);
+    };
+  }
+
 
   upDate() {
     this.removeAllTr();
@@ -77,6 +99,4 @@ export class FavoritesView extends Favorites {
       tr.remove();
     });
   }
-
-
 }
