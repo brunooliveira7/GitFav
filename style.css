@@ -50,6 +50,7 @@ header .logo {
   border: none;
   border-radius: 0.5rem;
   padding: 1.6rem;
+  color: #fff;
 }
 
 .search button {
@@ -96,6 +97,7 @@ table tr:nth-child(odd) {
 table tr {
   background: #06181c;
   font-weight: 700;
+  border-bottom: 1px solid #4A808C;
 }
 
 td {
