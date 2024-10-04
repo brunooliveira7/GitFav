@@ -1,4 +1,3 @@
-
 export class GithubUser {
     static seach(username) {
       const endpoint = `https://api.github.com/users/${username}`;
