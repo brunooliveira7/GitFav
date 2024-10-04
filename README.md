@@ -1,7 +1,7 @@
 <h1 align="center"> GitFav </h1>
 
 <p align="center">
-GitFav é uma solução simples em que usuários podem criar uma lista personalizada dos perfis que mais admiram ou acompanham no GitHub. Site disponível em: https://brunooliveira7.github.io/Gitfav#/
+GitFav é uma solução simples em que usuários podem criar uma lista personalizada dos perfis que mais admiram ou acompanham no GitHub. Site disponível em: https://brunooliveira7.github.io/GitFav/
 </p>
 
 <p align="center">
