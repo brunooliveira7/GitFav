@@ -28,6 +28,10 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 Esse app é uma forma prática de acompanhar perfis inspiradores ou importantes do GitHub.
 
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/TQ2TRMpmRGGLV0zLv5zizm/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?node-id=208-404&node-type=frame&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
