@@ -71,11 +71,18 @@ header .logo {
   cursor: pointer;
 }
 
+main {
+  border: 1px solid #4A808C;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 table {
-  border-radius: 1.2rem;
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
+  border: 1px solid #4A808C;
+  border-radius: 10px;
 }
 
 table * {
