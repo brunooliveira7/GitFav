@@ -29,7 +29,7 @@ export class Favorites {
       if (user.login === undefined) {
         throw new Error("Usuário não encontrado!");
       }
-      
+
       this.entries = [user, ...this.entries];
       this.upDate();
       this.save();
@@ -111,7 +111,7 @@ export class FavoritesView extends Favorites {
             <td class="repositories">76</td>
             <td class="followers">9589</td>
             <td>
-              <button class="remove">&times;</button>
+              <button class="remove">Remove</button>
             </td>
         `;
     return tr;
